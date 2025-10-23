@@ -1,0 +1,31 @@
+variable,label,keying,type,value_labels
+participant_id,Participant ID,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w1_loc_1,Becoming a success is a matter of hard work. Lucky breaks have little or nothing to do with it.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w1_loc_2,"When I make plans, I am almost certain that I can make them work.",1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w1_loc_3,There is a direct connection between how much I study and the grades I get.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w1_loc_4,It is impossible for me to believe that chance or luck plays an important part in my life.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w1_loc_5,What happens to me is my own doing.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w2_loc_1,Becoming a success is a matter of hard work. Lucky breaks have little or nothing to do with it.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w2_loc_2,"When I make plans, I am almost certain that I can make them work.",1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w2_loc_3,There is a direct connection between how much I study and the grades I get.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w2_loc_4,It is impossible for me to believe that chance or luck plays an important part in my life.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w2_loc_5,What happens to me is my own doing.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w3_loc_1,Becoming a success is a matter of hard work. Lucky breaks have little or nothing to do with it.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w3_loc_2,"When I make plans, I am almost certain that I can make them work.",1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w3_loc_3,There is a direct connection between how much I study and the grades I get.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w3_loc_4,It is impossible for me to believe that chance or luck plays an important part in my life.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w3_loc_5,What happens to me is my own doing.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w4_loc_1,Becoming a success is a matter of hard work. Lucky breaks have little or nothing to do with it.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w4_loc_2,"When I make plans, I am almost certain that I can make them work.",1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w4_loc_3,There is a direct connection between how much I study and the grades I get.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w4_loc_4,It is impossible for me to believe that chance or luck plays an important part in my life.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+w4_loc_5,What happens to me is my own doing.,1,numeric,1 Strongly Disagree 2 Disagree 3 Neither Agree nor Disagree 4 Agree 5 Strongly Agree
+pathway,College major pathway,,factor,1 Uncertain 2 Discovery 3 Redirect 4 Solidification 5 Certain
+age,Age,,character,NA
+gender,Gender,,character,NA
+race,"In terms of ethnic group, I consider myself to be",,character,NA
+transfer,Did you transfer to UMN from another college or university?,,factor,0 No 1 Yes
+international,Are you an international student?,,factor,0 No 1 Yes
+us_born,Were you born in the U.S.?,,factor,0 No 1 Yes
+parent_ed_1,What level of schooling did this parent/guardian complete?,,factor,1 No school 2 Elementary school 3 Middle school/Junior high 4 Some high school 5 High school diploma 6 Associates degree or equivalent (2 year degree) 7 Bachelor's degree (4 year degree) 8 Master's degree 9 Doctorate or professional degree
+parent_ed_2,What level of schooling did this parent/guardian complete?,,factor,1 No school 2 Elementary school 3 Middle school/Junior high 4 Some high school 5 High school diploma 6 Associates degree or equivalent (2 year degree) 7 Bachelor's degree (4 year degree) 8 Master's degree 9 Doctorate or professional degree
