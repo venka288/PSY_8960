@@ -235,6 +235,7 @@ table(dat_sim$us_born_sim)
 
 # parent ed 1
 dat_sim$parent_ed_1_sim <- sample(1:9, size = 96, replace = TRUE, prob = c(.01, .01, .01, .06, .29, .24, .25, .10, .03))
+table(dat_sim$parent_ed_1_sim)
 
 # recode parent ed 1
 dat_sim$parent_ed_1_sim <- recode(dat_sim$parent_ed_1_sim,
@@ -250,6 +251,7 @@ dat_sim$parent_ed_1_sim <- recode(dat_sim$parent_ed_1_sim,
 
 # parent ed 2
 dat_sim$parent_ed_2_sim <- sample(1:9, size = 96, replace = TRUE, prob = c(.01, .01, .01, .06, .29, .24, .25, .10, .03))
+table(dat_sim$parent_ed_2_sim)
 
 # recode parent ed 2
 dat_sim$parent_ed_2_sim <- recode(dat_sim$parent_ed_2_sim,
@@ -276,4 +278,4 @@ dat_sim %>%
 dat_sim
 
 # save new file
-write.csv(dat_sim, "./Data/loc_pathways_simulated_data", row.names = FALSE)
+write.csv(dat_sim, "./Data/loc_pathways_simulated_data_2025-11-08.csv", row.names = FALSE)
