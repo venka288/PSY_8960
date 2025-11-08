@@ -1,97 +1,97 @@
-"id","w1_loc_1_sim","w1_loc_2_sim","w1_loc_3_sim","w1_loc_4_sim","w1_loc_5_sim","w2_loc_1_sim","w2_loc_2_sim","w2_loc_3_sim","w2_loc_4_sim","w2_loc_5_sim","w3_loc_1_sim","w3_loc_2_sim","w3_loc_3_sim","w3_loc_4_sim","w3_loc_5_sim","w4_loc_1_sim","w4_loc_2_sim","w4_loc_3_sim","w4_loc_4_sim","w4_loc_5_sim","pathway_sim"
-1,NA,4,3,3,3,2,3,2,5,NA,5,1,2,3,4,1,4,NA,3,2,5
-2,3,4,3,3,2,4,3,3,4,3,NA,1,2,2,NA,1,4,3,3,2,3
-3,4,5,3,3,4,1,4,2,4,3,3,4,4,NA,3,2,2,1,2,NA,3
-4,2,2,2,2,2,4,3,5,1,4,3,3,2,2,4,1,NA,NA,NA,2,2
-5,5,3,2,3,4,4,3,3,3,2,4,3,2,2,2,3,NA,4,3,4,4
-6,1,4,4,2,4,3,3,2,2,3,3,3,2,4,NA,2,5,3,1,2,2
-7,2,2,4,2,2,3,2,3,2,2,3,2,3,1,2,5,4,3,4,1,3
-8,3,3,2,3,3,4,1,3,3,3,2,3,NA,3,4,NA,3,2,3,2,5
-9,2,4,2,2,3,NA,3,2,4,3,NA,4,4,3,2,3,2,3,NA,2,2
-10,3,4,4,1,NA,3,3,4,3,3,4,3,2,2,NA,3,4,NA,4,NA,1
-11,2,3,1,3,2,NA,2,4,3,4,2,2,NA,4,3,3,3,2,NA,2,5
-12,3,NA,3,2,1,4,2,NA,3,2,3,3,4,2,3,NA,3,4,2,3,4
-13,4,4,4,3,NA,NA,3,NA,3,4,2,4,3,4,3,2,5,3,2,3,5
-14,4,2,4,3,4,4,4,NA,NA,4,2,2,4,4,5,4,3,2,4,NA,4
-15,2,4,4,NA,3,3,4,3,NA,4,2,3,NA,2,5,3,2,3,2,2,1
-16,3,2,2,2,2,2,NA,3,2,3,3,2,NA,3,3,2,3,5,2,3,5
-17,4,3,3,3,3,3,5,4,3,3,NA,NA,4,3,2,4,3,1,3,4,1
-18,4,4,3,4,5,NA,4,2,3,2,NA,4,3,4,4,5,3,2,4,4,4
-19,4,5,4,3,4,2,3,3,5,4,4,4,2,2,NA,2,NA,4,3,3,4
-20,3,3,2,4,2,2,4,2,3,2,3,4,2,2,2,2,3,2,2,2,2
-21,4,3,2,3,4,4,3,4,2,3,4,2,2,NA,3,4,4,5,3,2,4
-22,2,3,3,2,2,3,3,2,2,3,2,3,2,2,4,3,3,3,3,4,2
-23,3,2,4,3,4,2,4,3,2,NA,NA,NA,3,4,4,3,3,2,4,NA,1
-24,3,3,3,3,2,3,2,3,3,2,5,1,3,3,NA,3,3,NA,2,3,2
-25,4,3,3,NA,3,2,3,4,3,3,3,2,5,4,NA,NA,3,3,2,4,4
-26,3,1,4,3,3,3,4,2,1,3,2,4,3,5,2,4,4,4,2,2,4
-27,3,4,3,3,4,3,NA,NA,3,2,4,4,2,4,4,4,3,3,NA,2,5
-28,NA,3,5,4,3,2,3,3,1,4,3,3,3,3,3,1,4,NA,NA,3,1
-29,3,3,3,3,2,3,5,3,4,4,2,5,NA,5,3,1,4,3,1,1,3
-30,5,5,4,3,4,3,3,3,1,2,2,2,3,2,3,2,2,2,3,4,3
-31,3,3,3,3,4,4,5,2,4,3,3,3,3,5,2,3,NA,2,4,2,1
-32,5,4,3,4,3,4,3,3,3,1,NA,2,2,NA,1,3,2,1,3,3,2
-33,5,2,3,3,2,5,2,2,1,3,NA,3,3,2,5,3,2,2,NA,3,1
-34,4,2,3,1,NA,2,3,4,3,5,2,3,3,4,3,3,3,3,3,3,4
-35,4,3,3,3,3,4,2,4,3,3,2,2,2,NA,2,3,3,4,4,3,2
-36,5,3,2,1,3,4,4,NA,2,4,4,3,2,NA,4,3,4,4,4,3,2
-37,4,3,3,4,4,3,3,4,4,3,3,2,2,3,3,3,2,3,3,2,5
-38,3,1,3,2,4,2,3,2,4,2,2,3,NA,2,3,1,3,2,2,4,1
-39,2,4,3,3,2,2,3,3,1,2,3,3,3,4,3,2,NA,3,2,2,1
-40,4,3,3,4,3,4,2,2,NA,4,NA,3,3,4,2,5,1,3,3,NA,5
-41,3,3,4,2,3,3,2,3,1,3,4,2,2,3,3,3,5,4,2,3,4
-42,3,2,1,NA,3,4,1,4,4,2,4,3,3,2,3,4,NA,3,4,3,2
-43,NA,2,NA,4,3,2,2,3,4,3,NA,3,3,3,4,4,3,2,NA,4,2
-44,3,4,1,4,2,2,4,3,3,2,4,2,3,3,NA,3,4,4,4,3,1
-45,2,5,3,4,4,3,4,3,4,2,3,3,3,3,3,4,3,1,2,1,1
-46,2,2,3,4,3,3,3,5,2,5,3,2,3,2,3,2,NA,2,3,2,1
-47,2,2,3,4,2,2,3,4,4,NA,2,3,2,2,2,NA,NA,1,5,3,3
-48,4,2,3,3,3,3,NA,3,4,4,3,2,3,2,4,NA,2,3,NA,1,1
-49,2,3,4,3,3,3,3,3,3,4,4,NA,3,3,NA,5,3,NA,3,5,4
-50,4,3,4,1,3,2,3,4,3,3,2,2,5,NA,4,3,3,NA,3,3,1
-51,1,4,3,2,2,2,3,NA,4,NA,2,NA,3,3,1,2,2,4,4,3,2
-52,4,NA,5,3,3,4,2,4,2,2,2,NA,2,2,3,2,3,4,4,NA,5
-53,2,3,3,3,5,4,4,5,2,2,3,3,2,2,4,3,3,NA,NA,3,3
-54,4,3,5,3,2,3,2,3,3,4,5,4,3,1,4,1,NA,2,2,NA,3
-55,3,3,3,4,4,3,3,1,3,4,1,NA,4,3,3,2,2,4,3,2,2
-56,5,NA,3,2,2,3,2,4,3,5,3,4,1,2,3,4,3,3,3,NA,2
-57,4,3,NA,NA,2,2,5,3,4,2,4,NA,2,3,NA,5,2,2,4,4,4
-58,5,3,3,2,4,1,4,2,4,NA,3,3,3,2,2,4,1,4,4,4,2
-59,3,3,4,3,5,4,3,NA,3,2,3,2,NA,4,3,3,3,NA,4,3,4
-60,4,2,3,3,1,3,4,4,3,3,NA,4,4,4,3,NA,1,3,3,4,5
-61,3,NA,1,4,3,2,3,3,1,3,NA,2,3,2,1,2,2,3,NA,2,4
-62,4,3,4,2,3,5,4,3,2,NA,3,3,3,3,3,5,5,3,3,4,2
-63,3,3,3,3,2,3,4,3,3,3,5,NA,3,4,4,4,3,3,1,3,5
-64,2,1,3,2,4,3,3,4,2,2,3,3,NA,3,2,2,3,NA,5,4,4
-65,2,3,3,3,3,3,2,3,3,3,4,2,3,NA,2,NA,4,2,2,NA,5
-66,3,2,2,4,4,3,3,NA,2,4,5,3,2,3,2,5,4,4,3,NA,4
-67,3,1,3,5,3,3,3,4,NA,3,3,5,3,4,3,5,NA,4,NA,NA,4
-68,3,4,4,4,2,NA,2,4,3,2,2,3,1,2,1,3,3,NA,4,1,4
-69,2,3,2,2,1,2,1,2,3,4,3,3,4,4,4,3,NA,3,3,3,2
-70,3,2,2,5,4,4,2,2,2,4,3,2,3,NA,4,2,NA,NA,2,2,3
-71,2,3,3,3,4,NA,2,3,3,3,2,3,3,2,3,3,3,2,2,4,2
-72,3,3,3,4,3,4,2,3,4,2,4,4,5,4,4,NA,3,4,4,1,2
-73,3,3,4,3,2,2,2,5,4,2,3,2,4,3,NA,NA,NA,2,3,3,3
-74,2,4,3,4,3,2,4,3,4,4,NA,NA,3,2,3,3,2,4,3,NA,3
-75,4,4,1,3,1,4,2,3,2,1,4,4,NA,4,4,NA,3,2,3,3,3
-76,2,4,NA,3,NA,3,2,3,1,4,2,2,2,2,4,3,NA,2,2,3,4
-77,3,4,NA,4,2,2,4,3,3,2,4,3,3,2,4,2,3,4,2,3,3
-78,NA,5,4,1,4,3,3,4,NA,NA,3,3,3,5,2,NA,3,3,2,2,1
-79,2,2,2,3,2,2,NA,2,5,2,2,3,4,3,3,2,NA,3,3,3,3
-80,4,4,2,4,2,NA,NA,4,3,2,2,2,NA,2,NA,3,2,5,3,NA,5
-81,4,2,4,2,1,4,NA,2,2,NA,4,3,4,3,4,NA,3,3,2,3,5
-82,3,3,2,3,3,4,3,2,2,2,2,4,2,3,5,4,2,1,4,4,3
-83,3,4,2,4,3,3,4,3,2,2,2,3,4,3,2,NA,4,NA,3,3,2
-84,3,2,3,4,4,4,4,3,NA,2,2,4,3,3,NA,4,2,3,2,3,3
-85,2,3,4,4,3,3,4,4,3,3,2,NA,3,NA,2,2,3,2,3,NA,4
-86,2,4,4,3,2,3,3,2,NA,4,3,3,3,NA,3,NA,3,NA,5,2,4
-87,2,3,5,2,2,1,5,3,3,3,2,5,3,2,3,3,4,4,NA,3,4
-88,4,2,3,4,2,3,4,3,2,3,4,3,3,NA,2,1,2,3,3,3,1
-89,4,3,3,3,4,3,3,2,3,3,3,4,NA,4,3,2,3,3,4,3,3
-90,4,4,4,4,3,4,NA,2,3,3,3,4,4,3,4,4,4,4,NA,5,3
-91,3,3,4,5,4,3,3,4,NA,3,2,2,2,4,4,2,2,1,2,2,3
-92,2,4,3,4,3,3,3,3,4,4,3,2,3,NA,2,2,3,2,3,3,1
-93,4,1,3,5,2,4,2,3,2,2,2,NA,3,3,3,3,3,5,NA,3,3
-94,4,3,4,3,4,2,4,3,5,3,3,2,NA,1,4,5,2,NA,2,2,4
-95,4,3,3,2,1,3,2,2,4,2,3,NA,4,2,3,2,3,4,NA,NA,2
-96,3,3,3,4,2,NA,NA,4,4,2,4,2,4,4,4,NA,5,4,3,4,1
+"participant_id","w1_loc_1_sim","w1_loc_2_sim","w1_loc_3_sim","w1_loc_4_sim","w1_loc_5_sim","w2_loc_1_sim","w2_loc_2_sim","w2_loc_3_sim","w2_loc_4_sim","w2_loc_5_sim","w3_loc_1_sim","w3_loc_2_sim","w3_loc_3_sim","w3_loc_4_sim","w3_loc_5_sim","w4_loc_1_sim","w4_loc_2_sim","w4_loc_3_sim","w4_loc_4_sim","w4_loc_5_sim","pathway_sim","age_sim","gender_sim","race_sim","transfer_sim","international_sim","us_born_sim","parent_ed_1_sim","parent_ed_2_sim"
+1,3,2,2,3,5,3,2,4,3,4,NA,3,2,2,NA,3,3,3,NA,NA,"Discovery",19,"Female","White",0,0,1,"Elementary school","Bachelor's degree (4 year degree)"
+2,4,3,3,2,3,3,2,5,4,NA,4,3,3,2,2,4,NA,3,3,3,"Discovery",18,"Female","Hispanic/Latine",0,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+3,4,3,3,3,3,4,3,4,3,3,NA,3,3,2,3,5,4,NA,4,2,"Discovery",18,"Male","White",1,0,0,"High school diploma","Bachelor's degree (4 year degree)"
+4,2,2,5,4,4,4,3,3,NA,1,3,2,3,3,4,3,NA,NA,2,2,"Redirect",18,"Female","Other",1,0,1,"Master's degree","Some high school"
+5,4,2,3,2,4,3,3,3,4,3,2,4,3,1,2,3,4,4,3,4,"Redirect",19,"Male","Multiracial",0,0,1,"Doctorate or professional degree","High school diploma"
+6,5,5,5,NA,3,4,3,2,3,1,4,3,3,3,5,NA,2,2,3,2,"Redirect",19,"Female","White",0,1,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+7,4,4,3,3,2,4,3,2,3,2,NA,2,3,3,2,NA,3,NA,5,1,"Certain",18,"Female","White",1,0,1,"Associates degree or equivalent (2 year degree)","High school diploma"
+8,2,3,1,3,3,4,3,4,3,NA,3,5,NA,3,2,3,3,3,2,3,"Discovery",18,"Male","White",0,0,0,"Master's degree","Associates degree or equivalent (2 year degree)"
+9,2,3,5,2,5,3,4,3,3,2,3,NA,5,2,3,5,2,5,NA,NA,"Uncertain",18,"Female","Black/African American",0,0,1,"Master's degree","High school diploma"
+10,2,3,2,4,NA,4,3,4,2,4,NA,4,5,3,4,3,2,2,3,NA,"Certain",22,"Female","White",0,0,1,"High school diploma","Bachelor's degree (4 year degree)"
+11,2,2,4,4,5,3,5,2,5,3,NA,4,4,3,2,3,2,3,4,NA,"Redirect",20,"Male","Hispanic/Latine",0,0,1,"Bachelor's degree (4 year degree)","Middle school/Junior high"
+12,4,NA,3,3,3,4,3,3,3,2,3,NA,5,4,3,1,3,1,2,4,"Solidification",22,"Female","Native American",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+13,2,2,4,1,3,1,2,4,2,4,4,3,2,5,2,3,3,2,3,2,"Solidification",18,"Female","White",0,0,1,"High school diploma","Bachelor's degree (4 year degree)"
+14,3,NA,3,3,3,2,3,5,NA,4,2,2,4,3,2,3,4,3,1,4,"Discovery",21,"Female","White",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+15,2,3,4,3,4,4,2,2,2,3,3,3,3,3,2,3,2,4,2,5,"Solidification",20,"Male","Black/African American",1,0,1,"Associates degree or equivalent (2 year degree)","Some high school"
+16,3,3,3,1,3,4,3,NA,2,3,4,1,3,2,3,4,3,3,2,1,"Solidification",19,"Female","Asian/Pacific Islander",1,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+17,4,2,2,3,3,3,4,2,4,NA,4,NA,3,1,4,2,2,2,3,4,"Discovery",19,"Male","White",0,0,1,"Associates degree or equivalent (2 year degree)","Master's degree"
+18,2,3,2,3,4,3,3,3,3,2,4,4,2,2,3,2,4,2,4,NA,"Redirect",19,"Male","Black/African American",0,0,1,"Associates degree or equivalent (2 year degree)","Associates degree or equivalent (2 year degree)"
+19,5,4,2,1,2,3,3,3,3,NA,2,3,2,4,NA,NA,3,4,4,3,"Redirect",19,"Nonbinary","White",0,1,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+20,2,4,3,3,3,2,2,2,NA,2,3,4,3,NA,3,3,NA,1,2,5,"Uncertain",19,"Nonbinary","White",1,0,1,"Master's degree","High school diploma"
+21,4,5,2,2,3,3,3,3,4,2,4,3,2,4,2,2,4,NA,2,3,"Discovery",19,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","Doctorate or professional degree"
+22,NA,3,3,3,NA,3,5,NA,3,3,2,3,4,4,4,2,4,3,2,2,"Redirect",19,"Female","Native American",0,1,0,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+23,3,3,3,4,3,3,2,3,3,4,3,5,3,4,2,3,2,NA,3,3,"Uncertain",19,"Female","White",1,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+24,2,3,3,4,3,3,4,2,3,3,3,NA,2,4,3,4,2,4,3,3,"Certain",18,"Female","White",1,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+25,4,3,3,3,5,2,5,1,2,3,NA,3,1,4,3,3,NA,2,3,2,"Certain",19,"Female","Hispanic/Latine",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+26,2,4,3,3,3,2,3,5,2,NA,2,3,4,2,3,3,2,5,NA,3,"Discovery",20,"Female","Multiracial",0,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+27,2,4,3,2,2,3,NA,4,4,2,2,NA,2,4,3,NA,3,4,3,4,"Discovery",21,"Female","Asian/Pacific Islander",0,0,1,"Associates degree or equivalent (2 year degree)","High school diploma"
+28,4,1,NA,3,3,NA,3,3,3,5,3,4,5,5,2,2,3,2,3,1,"Discovery",18,"Female","Asian/Pacific Islander",0,0,1,"Master's degree","Doctorate or professional degree"
+29,2,5,3,4,4,3,4,3,2,3,NA,NA,3,4,2,NA,3,3,4,4,"Redirect",18,"Female","White",0,1,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+30,1,4,2,2,3,3,3,3,3,3,3,3,NA,3,4,1,2,2,3,2,"Solidification",18,"Male","White",0,0,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+31,2,4,2,5,3,5,2,3,3,3,4,4,2,4,3,4,4,2,3,4,"Discovery",18,"Female","White",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+32,2,2,NA,4,2,3,NA,4,NA,3,1,3,3,NA,NA,3,2,2,3,NA,"Uncertain",18,"Female","White",0,0,1,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+33,3,4,4,3,4,4,2,2,3,1,3,2,3,3,3,3,4,2,5,3,"Solidification",19,"Female","White",1,0,1,"High school diploma","Bachelor's degree (4 year degree)"
+34,2,4,3,3,4,4,3,4,2,4,3,5,4,3,NA,3,3,3,3,5,"Redirect",19,"Female","Multiracial",0,0,1,"Master's degree","Associates degree or equivalent (2 year degree)"
+35,3,3,4,3,2,3,1,5,2,4,2,NA,3,3,5,NA,4,NA,4,3,"Discovery",19,"Female","White",0,0,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+36,3,2,2,3,4,2,4,4,3,2,3,1,5,NA,3,3,2,5,3,2,"Uncertain",18,"Female","White",0,0,1,"High school diploma","High school diploma"
+37,1,NA,2,3,2,4,NA,4,5,3,3,3,3,3,2,2,2,NA,3,NA,"Uncertain",19,"Female","White",1,0,1,"Associates degree or equivalent (2 year degree)","Associates degree or equivalent (2 year degree)"
+38,3,2,1,2,2,2,1,2,2,4,3,3,5,4,2,4,4,3,3,NA,"Redirect",18,"Male","White",1,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+39,3,2,2,NA,2,NA,3,2,4,4,2,3,4,NA,3,3,4,3,2,5,"Uncertain",18,"Female","White",0,0,1,"Bachelor's degree (4 year degree)","Master's degree"
+40,2,3,4,4,2,1,1,4,2,3,4,3,3,2,3,NA,4,4,NA,NA,"Redirect",18,"Male","White",0,0,1,"Some high school","Associates degree or equivalent (2 year degree)"
+41,4,2,4,2,2,4,2,4,3,3,3,4,3,3,NA,3,3,3,2,2,"Redirect",18,"Male","White",0,0,1,"High school diploma","High school diploma"
+42,2,3,2,4,5,4,2,2,5,2,3,4,2,2,3,NA,4,2,NA,4,"Uncertain",22,"Female","Hispanic/Latine",1,0,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+43,NA,3,3,4,3,4,2,2,3,5,3,5,3,3,3,3,3,3,4,NA,"Discovery",18,"Female","White",0,0,1,"Some high school","Bachelor's degree (4 year degree)"
+44,2,3,1,3,3,2,2,4,5,3,4,4,3,NA,NA,2,3,4,NA,2,"Solidification",19,"Male","White",0,0,0,"High school diploma","Some high school"
+45,2,3,4,2,4,2,3,NA,3,4,NA,NA,4,3,3,5,NA,2,2,4,"Discovery",22,"Male","White",1,0,1,"Associates degree or equivalent (2 year degree)","Associates degree or equivalent (2 year degree)"
+46,2,2,3,4,4,4,4,1,2,4,3,4,3,3,3,3,NA,3,NA,2,"Discovery",18,"Female","Asian/Pacific Islander",1,0,1,"Some high school","Doctorate or professional degree"
+47,3,2,4,3,2,2,4,3,4,3,3,NA,4,3,2,4,3,NA,3,3,"Solidification",19,"Male","Hispanic/Latine",0,0,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+48,4,3,4,2,NA,2,3,4,2,5,3,3,3,3,4,NA,3,4,4,4,"Discovery",20,"Female","Black/African American",0,0,1,"Associates degree or equivalent (2 year degree)","High school diploma"
+49,4,3,5,5,5,4,3,2,2,4,4,2,2,2,3,4,4,3,2,3,"Uncertain",18,"Female","Asian/Pacific Islander",0,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+50,3,3,4,3,3,4,4,2,2,5,3,2,3,4,4,3,1,4,1,NA,"Solidification",19,"Female","White",0,1,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+51,5,3,3,3,2,4,NA,3,3,4,2,4,NA,3,1,2,3,4,1,2,"Solidification",19,"Female","Black/African American",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+52,4,2,2,2,3,5,2,1,3,3,4,4,3,2,3,2,2,3,NA,3,"Uncertain",18,"Male","Multiracial",0,0,1,"Master's degree","Some high school"
+53,3,3,4,3,1,3,4,4,2,3,3,4,4,NA,3,3,2,2,3,2,"Certain",18,"Female","White",0,0,1,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+54,3,2,4,1,NA,4,NA,1,3,4,2,2,2,4,4,4,5,3,4,2,"Uncertain",18,"Male","Asian/Pacific Islander",1,0,1,"High school diploma","Bachelor's degree (4 year degree)"
+55,4,3,4,2,4,NA,3,NA,2,4,3,2,2,1,5,3,2,NA,4,4,"Redirect",19,"Male","Hispanic/Latine",1,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+56,3,2,3,NA,3,3,3,NA,2,3,3,4,4,2,3,2,2,3,4,4,"Certain",18,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","Bachelor's degree (4 year degree)"
+57,4,3,4,2,4,2,4,1,4,2,4,4,NA,4,3,3,2,4,2,2,"Uncertain",19,"Male","Black/African American",1,0,1,"High school diploma","Bachelor's degree (4 year degree)"
+58,4,5,2,4,3,4,4,4,3,2,3,1,2,NA,4,5,4,1,2,2,"Redirect",19,"Female","White",0,0,0,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+59,4,5,5,4,4,4,5,NA,3,2,NA,4,2,3,2,NA,4,4,2,2,"Discovery",19,"Male","White",0,0,1,"High school diploma","High school diploma"
+60,3,2,3,2,2,2,4,3,NA,3,4,4,NA,NA,3,3,4,3,1,1,"Redirect",18,"Female","White",0,0,1,"High school diploma","High school diploma"
+61,3,3,3,3,3,4,2,3,4,3,2,2,4,2,2,3,5,4,3,3,"Discovery",18,"Female","White",0,0,1,"High school diploma","High school diploma"
+62,3,4,3,3,3,2,2,2,NA,2,3,3,NA,1,2,NA,3,NA,2,4,"Uncertain",20,"Female","White",0,0,1,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+63,2,2,3,3,1,4,2,2,3,3,4,4,3,3,1,3,2,4,3,3,"Redirect",18,"Male","Hispanic/Latine",1,0,1,"Middle school/Junior high","Bachelor's degree (4 year degree)"
+64,3,NA,2,3,4,NA,4,4,3,3,4,4,4,2,5,4,4,2,5,3,"Uncertain",20,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+65,3,3,5,3,4,4,3,1,5,2,4,3,2,3,2,NA,4,NA,5,2,"Discovery",20,"Nonbinary","Asian/Pacific Islander",0,0,1,"High school diploma","Associates degree or equivalent (2 year degree)"
+66,2,3,4,2,4,3,3,4,2,3,4,3,NA,3,5,5,4,NA,NA,2,"Discovery",22,"Female","White",1,0,1,"Master's degree","High school diploma"
+67,3,3,2,2,3,4,4,4,3,3,3,4,2,3,NA,3,4,3,3,2,"Redirect",21,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+68,2,3,2,5,4,5,4,2,2,3,NA,NA,2,2,4,3,NA,3,3,2,"Uncertain",18,"Male","Hispanic/Latine",0,0,1,"Master's degree","Associates degree or equivalent (2 year degree)"
+69,5,4,4,4,3,NA,2,3,3,3,3,4,3,2,NA,3,NA,2,2,NA,"Uncertain",18,"Female","White",0,0,1,"Master's degree","High school diploma"
+70,2,3,4,4,3,3,3,2,3,4,3,4,3,2,4,4,3,2,1,2,"Certain",18,"Female","White",0,0,1,"Associates degree or equivalent (2 year degree)","Associates degree or equivalent (2 year degree)"
+71,3,4,3,4,2,4,2,3,4,2,3,3,3,3,3,4,3,2,3,3,"Uncertain",18,"Nonbinary","White",0,0,1,"Associates degree or equivalent (2 year degree)","Elementary school"
+72,NA,4,2,3,3,5,5,4,3,2,NA,5,3,3,4,4,NA,4,3,2,"Discovery",18,"Male","Asian/Pacific Islander",0,0,1,"Some high school","High school diploma"
+73,4,1,3,4,5,3,3,2,4,2,4,3,4,3,NA,2,3,NA,4,2,"Uncertain",18,"Female","Black/African American",1,0,1,"Associates degree or equivalent (2 year degree)","Bachelor's degree (4 year degree)"
+74,2,5,4,3,1,3,NA,4,5,2,4,3,3,3,3,NA,NA,3,4,5,"Certain",18,"Female","White",0,0,1,"High school diploma","High school diploma"
+75,3,3,3,2,2,3,4,2,4,4,3,NA,3,5,3,3,2,3,2,3,"Certain",19,"Male","White",0,0,1,"Master's degree","Master's degree"
+76,4,4,1,4,2,3,NA,3,NA,2,3,4,1,3,3,3,4,NA,NA,4,"Uncertain",18,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+77,2,3,3,2,4,NA,3,4,4,3,2,3,3,NA,3,3,NA,3,2,4,"Certain",18,"Male","Native American",0,0,1,"Associates degree or equivalent (2 year degree)","Master's degree"
+78,2,3,2,2,4,2,2,3,3,3,3,3,3,2,2,NA,NA,3,NA,3,"Uncertain",18,"Female","White",1,0,1,"High school diploma","Master's degree"
+79,5,3,3,3,3,3,4,3,3,2,2,5,2,3,4,2,4,4,4,4,"Discovery",19,"Male","White",1,0,1,"Associates degree or equivalent (2 year degree)","Doctorate or professional degree"
+80,2,3,2,3,4,3,2,3,3,3,4,4,NA,3,NA,NA,4,3,1,5,"Solidification",20,"Male","Multiracial",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+81,4,2,5,NA,1,NA,5,3,3,3,4,4,3,5,3,5,2,4,NA,4,"Uncertain",18,"Male","White",0,0,1,"Master's degree","High school diploma"
+82,3,4,2,2,4,3,2,3,3,NA,3,2,NA,3,2,4,2,4,3,2,"Solidification",18,"Male","White",0,0,1,"Bachelor's degree (4 year degree)","Associates degree or equivalent (2 year degree)"
+83,2,2,4,2,4,3,NA,3,3,3,3,2,NA,NA,2,5,3,3,NA,4,"Solidification",20,"Male","White",0,0,1,"Master's degree","Bachelor's degree (4 year degree)"
+84,4,3,4,2,4,2,4,3,3,NA,1,3,1,2,4,3,NA,3,3,3,"Solidification",18,"Male","White",0,0,1,"Associates degree or equivalent (2 year degree)","High school diploma"
+85,4,2,2,4,4,NA,2,5,3,2,4,2,4,2,4,4,2,NA,4,5,"Redirect",18,"Male","Asian/Pacific Islander",0,0,1,"Master's degree","Master's degree"
+86,4,3,4,3,4,2,4,NA,NA,4,3,4,NA,3,2,4,2,2,4,3,"Redirect",18,"Female","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+87,3,3,4,4,5,2,4,3,3,4,2,3,2,2,4,4,2,3,2,NA,"Redirect",18,"Male","White",0,0,1,"Doctorate or professional degree","Associates degree or equivalent (2 year degree)"
+88,3,2,1,3,2,3,4,NA,3,3,2,4,NA,4,NA,4,5,3,3,4,"Solidification",20,"Female","White",0,0,1,"High school diploma","Middle school/Junior high"
+89,2,2,3,3,4,3,3,2,2,2,3,2,5,5,3,3,3,1,2,2,"Uncertain",19,"Nonbinary","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+90,2,2,3,3,3,3,2,3,4,4,3,4,4,2,4,2,NA,4,2,3,"Certain",19,"Nonbinary","White",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+91,NA,4,3,3,3,2,5,4,3,3,3,2,3,NA,3,2,NA,4,NA,3,"Certain",18,"Female","Black/African American",0,0,1,"Bachelor's degree (4 year degree)","High school diploma"
+92,5,3,4,4,3,3,3,2,2,1,3,2,3,1,4,2,4,3,NA,1,"Solidification",19,"Female","White",1,0,1,"High school diploma","High school diploma"
+93,4,3,3,2,4,2,4,2,4,3,3,4,2,2,NA,2,3,3,3,NA,"Redirect",18,"Female","White",0,0,1,"Middle school/Junior high","High school diploma"
+94,2,3,NA,4,2,2,3,3,3,3,3,3,3,NA,2,4,3,1,3,2,"Certain",19,"Female","Hispanic/Latine",0,0,1,"Master's degree","High school diploma"
+95,3,4,3,3,2,3,3,1,4,NA,3,3,3,4,4,4,2,3,3,NA,"Certain",18,"Female","White",0,0,1,"Associates degree or equivalent (2 year degree)","Associates degree or equivalent (2 year degree)"
+96,4,1,NA,3,5,3,5,4,4,2,NA,NA,3,3,5,3,3,4,2,2,"Redirect",19,"Female","White",1,0,1,"High school diploma","Elementary school"
