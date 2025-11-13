@@ -129,17 +129,16 @@ dat_sim$gender_sim <-  recode(dat_sim$gender_sim,
                               "3" = "Nonbinary")
 
 # race
-dat_sim$race_sim <- sample(1:7, size = 96, replace = TRUE, prob = c(.65, .12, .08, .07, .04, .02, .02))
+dat_sim$race_sim <- sample(1:6, size = 96, replace = TRUE, prob = c(.34, .23, .20, .11, .06, .06))
 
 # recode race
 dat_sim$race_sim <-  recode(dat_sim$race_sim,
-                            "1" = "White",
-                            "2" = "Asian/Pacific Islander",
-                            "3" = "Black/African American",
-                            "4" = "Hispanic/Latine",
-                            "5" = "Multiracial",
-                            "6" = "Native American",
-                            "7" = "Other"
+                            "1" = "Asian/Pacific Islander",
+                            "2" = "Black/African American",
+                            "3" = "Hispanic/Latine",
+                            "4" = "Multiracial",
+                            "5" = "Native American",
+                            "6" = "Other"
                             )
 table(dat_sim$race_sim)
 
