@@ -71,9 +71,6 @@ dat <- read.csv("/Users/varshaschool/Documents/loc_pathways/Data/loc_pathways_si
 # Seed for random number generation
 set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
-
-#(count(Mode(dat$race_sim))) / (length(dat$race_sim)) * 100
-((attr(Mode(dat$race_sim), "freq"))/(length(dat$race_sim)) * 100)
 ```
 
 # Methods
@@ -83,6 +80,7 @@ We report how we determined our sample size, all data exclusions (if any), all m
 Participants were `r nrow(dat)` undergraduate students enrolled at a large, public university in the United States. They ranged in age from `r min(dat$age_sim)` to `r max(dat$age_sim)` years old (*M* = `r mean(dat$age_sim)`, *SD* = `r sd(dat$age_sim)`). The majority of participants identified as `r Mode(dat$race_sim)` (`r (attr(Mode(dat$race_sim), "freq"))/(length(dat$race_sim)) * 100`%) and `r tolower(Mode(dat$gender_sim))` (`r (attr(Mode(dat$gender_sim), "freq"))/(length(dat$gender_sim)) * 100`%). Additionally, the majority (`r (attr(Mode(dat$us_born_sim), "freq"))/(length(dat$us_born_sim)) * 100`%) of participants were born in the United States. A detailed summary of participant demographics is available in Table 1.
 
 ```{r descriptive table, echo=FALSE}
+#Gender
 male_n <- sum(dat$gender_sim == "Male")
 male_p <- (male_n/nrow(dat) * 100)
 female_n <- sum(dat$gender_sim == "Female")
@@ -90,18 +88,22 @@ female_p <- (female_n/nrow(dat) * 100)
 nb_n <- sum(dat$gender_sim == "Nonbinary")
 nb_p <- (nb_n/nrow(dat) * 100)
 
-dem_table <- dplyr::tribble(
-    ~Characteristic, ~n, ~percent,
-    "Male", male_n,  male_p,
-    "Female", female_n,  female_p,
-    "Nonbinary", nb_n,  nb_p)
+
+
+dem_table <- tribble(
+    ~Characteristic, ~n, ~`%`,
+    "Male", male_n, male_p,
+    "Female", female_n, female_p,
+    "Nonbinary", nb_n, nb_p,
+    )
 
 # now we can use the built in APA table function to format that table
 
-apa_table(dem_table, 
-             caption = "Descriptives for SRS scale",
-             align = "l", digits = 2,
-          note = "This is a table")
+apa_table(dem_table,
+          caption = "Sociodemographic Characteristics of Participants",
+          align = NULL, 
+          digits = 2,
+          note = "N = 96. Participants were 18.91 years old on average (SD = 1.15)")
 ```
 
 with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year.
