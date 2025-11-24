@@ -42,9 +42,9 @@ abstract: |
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : "r-references.bib"
+bibliography      : ["references.bib", "r-references.bib"]
 
-floatsintext      : no
+floatsintext      : yes
 linenumbers       : yes
 draft             : no
 mask              : no
@@ -74,50 +74,98 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
 # Methods
+
 We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
 
 ## Participants
+
 Participants were `r nrow(dat)` undergraduate students enrolled at a large, public university in the United States. They ranged in age from `r min(dat$age_sim)` to `r max(dat$age_sim)` years old (*M* = `r mean(dat$age_sim)`, *SD* = `r sd(dat$age_sim)`). The majority of participants identified as `r Mode(dat$race_sim)` (`r (attr(Mode(dat$race_sim), "freq"))/(length(dat$race_sim)) * 100`%) and `r tolower(Mode(dat$gender_sim))` (`r (attr(Mode(dat$gender_sim), "freq"))/(length(dat$gender_sim)) * 100`%). Additionally, the majority (`r (attr(Mode(dat$us_born_sim), "freq"))/(length(dat$us_born_sim)) * 100`%) of participants were born in the United States. A detailed summary of participant demographics is available in Table 1.
 
 ```{r descriptive table, echo=FALSE}
 #Gender
+gender_n <- ""
+gender_p <- ""
 male_n <- sum(dat$gender_sim == "Male")
-male_p <- (male_n/nrow(dat) * 100)
+male_p <- round((male_n/nrow(dat) * 100), digits = 2)
 female_n <- sum(dat$gender_sim == "Female")
-female_p <- (female_n/nrow(dat) * 100)
+female_p <- round((female_n/nrow(dat) * 100), digits = 2)
 nb_n <- sum(dat$gender_sim == "Nonbinary")
-nb_p <- (nb_n/nrow(dat) * 100)
+nb_p <- round((nb_n/nrow(dat) * 100), digits = 2)
+
+#Race
+race_n <- ""
+race_p <- ""
+asian_n <- sum(dat$race_sim == "Asian/Pacific Islander")
+asian_p <- round((asian_n/nrow(dat) * 100), digits = 2)
+black_n <- sum(dat$race_sim == "Black/African American")
+black_p <- round((black_n/nrow(dat) * 100), digits = 2)
+latin_n <- sum(dat$race_sim == "Hispanic/Latine")
+latin_p <- round((latin_n/nrow(dat) * 100), digits = 2)
+multi_n <- sum(dat$race_sim == "Multiracial")
+multi_p <- round((multi_n/nrow(dat) * 100), digits = 2)
+native_n <- sum(dat$race_sim == "Native American")
+native_p <- round((native_n/nrow(dat) * 100), digits = 2)
+other_race_n <- sum(dat$race_sim == "Other")
+other_race_p <- round((other_race_n/nrow(dat) * 100), digits = 2)
+
+#US-Born
+row_us_born_n <- ""
+row_us_born_p <- ""
+us_born_n <- sum(dat$us_born_sim == 1)
+us_born_p <- round((us_born_n/nrow(dat) * 100), digits = 2)
+not_us_born_n <- sum(dat$us_born_sim == 0)
+not_us_born_p <- round((not_us_born_n/nrow(dat) * 100), digits = 2)
 
 dem_table <- tribble(
     ~Characteristic, ~n, ~`%`,
-    "Male", male_n, male_p,
-    "Female", female_n, female_p,
-    "Nonbinary", nb_n, nb_p,
+    "Gender", gender_n, gender_p,
+    "     Male", as.factor(male_n), as.factor(male_p),
+    "     Female", as.factor(female_n), as.factor(female_p),
+    "     Nonbinary", as.factor(nb_n), as.factor(nb_p),
+    "Race", race_n, race_p,
+    "     Asian/Pacific Islander", as.factor(asian_n), as.factor(asian_p),
+    "     Black/African American", as.factor(black_n), as.factor(black_p),
+    "     Hispanic/Latine", as.factor(latin_n), as.factor(latin_p),
+    "     Multiracial", as.factor(multi_n), as.factor(multi_p),
+    "     Native American", as.factor(native_n), as.factor(native_p),
+    "     Other", as.factor(other_race_n), as.factor(other_race_p),
+    "Birthplace", row_us_born_n, row_us_born_p,
+    "     Born in the US", as.factor(us_born_n), as.factor(us_born_p),
+    "     Not Born in the US", as.factor(not_us_born_n), as.factor(not_us_born_p)
     )
 
 # now we can use the built in APA table function to format that table
 
-apa_table(dem_table,
-          caption = "Sociodemographic Characteristics of Participants",
+table_1_caption <- "N = 96. Participants were 18.91 years old on average (SD = 1.15)"
+
+apa_table(dem_table, 
+          caption = "Sociodemographic Characteristics of Participants", 
           align = NULL, 
-          digits = 2,
-          note = "N = 96. Participants were 18.91 years old on average (SD = 1.15)")
+          digits = 2, 
+          note = table_1_caption)
 ```
 
-with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year.
+Participants were recruited through a multicultural orientation event, with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year. Participants who participated in at least three waves of the survey were included in analyses.
 
-## Material
+## Materials
+
+### College Major Pathway
+
+College major pathways were coded based on participant self-reported narratives about their path to choosing a college major. Students were assigned one of five pathways: Uncertain (uncertain of their major from T1 to T4), Discovery (undecided at T1, chose major by T4), Redirect (changed major between T1 and T4), Solidification (unsure about initial major at T1, certain about same major at T4), and Certain (certain about same major from T1 to T4).
+
+### Locus of Control
+
+Locus of control was measured through the Internal Locus of Control subscale of the 20-item version of the Multi-Measure Agentic Personality Scale (MAPS20) [@côté2016]. Participants responded to five items on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree), with higher scores indicating higher internal locus of control.
 
 ## Procedure
 
 ## Data analysis
-We used `r cite_r("r-references.bib")` for all our analyses.
 
+We used `r cite_r("r-references.bib")` for all our analyses.
 
 # Results
 
 # Discussion
-
 
 \newpage
 

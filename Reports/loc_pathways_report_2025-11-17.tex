@@ -3,7 +3,7 @@
 \PassOptionsToPackage{hyphens}{url}
 \documentclass[
   english,
-  man]{apa6}
+  man,floatsintext]{apa6}
 \usepackage{xcolor}
 \usepackage{amsmath,amssymb}
 \setcounter{secnumdepth}{-\maxdimen} % remove section numbering
@@ -188,12 +188,6 @@
 {}{\PatchFailed}
 \makeatother
 \keywords{keywords\newline\indent Word count: X}
-\DeclareDelayedFloatFlavor{ThreePartTable}{table}
-\DeclareDelayedFloatFlavor{lltable}{table}
-\DeclareDelayedFloatFlavor*{longtable}{table}
-\makeatletter
-\renewcommand{\efloat@iwrite}[1]{\immediate\expandafter\protected@write\csname efloat@post#1\endcsname{}}
-\makeatother
 \usepackage{lineno}
 
 \linenumbers
@@ -264,10 +258,20 @@ Participants were 96 undergraduate students enrolled at a large, public universi
 \toprule
 Characteristic & \multicolumn{1}{c}{n} & \multicolumn{1}{c}{\%}\\
 \midrule
-Gender & NA & NA\\
-Male & 53 & 55.21\\
-Female & 40 & 41.67\\
-Nonbinary & 3 & 3.12\\
+Gender &  & \\
+\ \ \ \  Male & 53 & 55.21\\
+\ \ \ \  Female & 40 & 41.67\\
+\ \ \ \  Nonbinary & 3 & 3.12\\
+Race &  & \\
+\ \ \ \  Asian/Pacific Islander & 33 & 34.38\\
+\ \ \ \  Black/African American & 24 & 25\\
+\ \ \ \  Hispanic/Latine & 16 & 16.67\\
+\ \ \ \  Multiracial & 12 & 12.5\\
+\ \ \ \  Native American & 7 & 7.29\\
+\ \ \ \  Other & 4 & 4.17\\
+Birthplace &  & \\
+\ \ \ \  Born in the US & 93 & 96.88\\
+\ \ \ \  Not Born in the US & 3 & 3.12\\
 \bottomrule
 \addlinespace
 \end{tabular}
@@ -281,9 +285,17 @@ Nonbinary & 3 & 3.12\\
 
 \end{table}
 
-with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year.
+Participants were recruited through a multicultural orientation event, with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year. Participants who participated in at least three waves of the survey were included in analyses.
 
-\subsection{Material}\label{material}
+\subsection{Materials}\label{materials}
+
+\subsubsection{College Major Pathway}\label{college-major-pathway}
+
+College major pathways were coded based on participant self-reported narratives about their path to choosing a college major. Students were assigned one of five pathways: Uncertain (uncertain of their major from T1 to T4), Discovery (undecided at T1, chose major by T4), Redirect (changed major between T1 and T4), Solidification (unsure about initial major at T1, certain about same major at T4), and Certain (certain about same major from T1 to T4).
+
+\subsubsection{Locus of Control}\label{locus-of-control}
+
+Locus of control was measured through the Internal Locus of Control subscale of the 20-item version of the Multi-Measure Agentic Personality Scale (MAPS20) (Côté, Mizokami, Roberts, \& Nakama, 2016). Participants responded to five items on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree), with higher scores indicating higher internal locus of control.
 
 \subsection{Procedure}\label{procedure}
 
@@ -309,6 +321,9 @@ Barth, M. (2025). \emph{{tinylabels}: Lightweight variable labels}. \url{https:/
 
 \bibitem[\citeproctext]{ref-R-summarytools}
 Comtois, D. (2025). \emph{Summarytools: Tools to quickly and neatly summarize data}. \url{https://doi.org/10.32614/CRAN.package.summarytools}
+
+\bibitem[\citeproctext]{ref-cuxf4tuxe92016}
+Côté, J. E., Mizokami, S., Roberts, S. E., \& Nakama, R. (2016). An examination of the cross-cultural validity of the Identity Capital Model: American and Japanese students compared. \emph{Journal of Adolescence}, \emph{46}(1), 76--85. \url{https://doi.org/10.1016/j.adolescence.2015.11.001}
 
 \bibitem[\citeproctext]{ref-R-base}
 R Core Team. (2025). \emph{R: A language and environment for statistical computing}. Vienna, Austria: R Foundation for Statistical Computing. Retrieved from \url{https://www.R-project.org/}
