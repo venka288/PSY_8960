@@ -88,8 +88,6 @@ female_p <- (female_n/nrow(dat) * 100)
 nb_n <- sum(dat$gender_sim == "Nonbinary")
 nb_p <- (nb_n/nrow(dat) * 100)
 
-
-
 dem_table <- tribble(
     ~Characteristic, ~n, ~`%`,
     "Male", male_n, male_p,
