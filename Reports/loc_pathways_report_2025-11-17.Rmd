@@ -26,13 +26,13 @@ affiliation:
 authornote: |
 
 abstract: |
-  The present study seeks to better understand how feelings of control and agency impact academic decision-making. In particular, we do so by examining how locus of control changes among undergraduate students over the course of the first two years of college and how these patterns vary across different major pathways. The current student expands upon past research in three major ways. Firstly, previous studies of college student major choice more broadly compare undecided and decided students as opposed to narrower paths toward college major choice. Secondly, most previous studies of major choice examine group differences at one timepoint, rather than longitudinally. Finally, while locus of control has been extensively studied, there is a dearth of research on how locus of control changes over time, particularly among undergraduate students. Based on past studies of locus of control and decision-making as well as Baxter Magolda’s (2001) theory of self-authorship, we hypothesize that across the five major pathways measured in this study (uncertain, discovery, redirect, solidification, and certain), we will observe varied longitudinal patterns of locus of control. As locus of control was measured continuously— with lower scores indicating externality and higher scores indicating internality— hypotheses were based on both orientation at Time 1 (T1) and change from T1 to Time 4 (T4). Specifically, we hypothesize that 1) students in the uncertain pathway will demonstrate stable external locus of control from T1 to T4, 2) students in the discovery pathway will demonstrate a shift from external locus of control to internal locus of control between T1 to T4, 3) students in the redirect pathway will show stable internal locus of control from T1 to T4, 4) students in the solidification pathway will demonstrate increased internality from T1 to T4, and 5) students in the certain pathway will show stable internal locus of control from T1 to T4. 
+  Choosing a college major is among the most important and difficult decisions that a student makes in their career. The present study seeks to better understand how feelings of control and agency can impact this choice. In particular, we do so by examining how locus of control changes among undergraduate students over the course of the first two years of college and how these patterns vary across different major pathways. The current student expands upon past research in three major ways. Firstly, previous studies of college student major choice more broadly compare undecided and decided students as opposed to narrower paths toward college major choice. Secondly, most previous studies of major choice examine group differences at one timepoint, rather than longitudinally. Finally, while locus of control has been extensively studied, there is a dearth of research on how locus of control changes over time, particularly among undergraduate students. Based on past studies of locus of control and decision-making as well as Baxter Magolda’s (2001) theory of self-authorship, we hypothesized that across the five major pathways measured in this study (uncertain, discovery, redirect, solidification, and certain), we would observe varied longitudinal patterns of locus of control.
 
   
   <!-- https://tinyurl.com/ybremelq -->
   
-keywords          : "keywords"
-wordcount         : "X"
+keywords          : "College major choice, undergraduate students, locus of control, self-authorship"
+wordcount         : "542"
 
 bibliography      : ["references.bib", "r-references.bib"]
 
@@ -67,11 +67,15 @@ set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
 
-# Methods
+Picking an undergraduate major, while always an important decision, has become increasingly complicated over the years. With an ever-changing job market and an expanding selection of academic programs, students have many external factors to consider when making this life-altering choice. Additionally, students must examine internal characteristics, too, such as skills, values, and interests. However, how students make this decision varies from person to person. While some students enter college confident in their choice and stick with it till graduation, many others come in undeclared or change their major at some point in their undergraduate career. These different ways of arriving at a college major, or major pathways, outline different patterns of decision-making that demand further investigation.
 
-We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
+The present study seeks to better understand how feelings of control and agency impact academic decision-making. In particular, we do so by examining how locus of control changes among undergraduate students over the course of the first two years of college and how these patterns vary across different major pathways. The current student expands upon past research in three major ways. Firstly, previous studies of college student major choice more broadly compare undecided and decided students [@gordon1998; @rose1971; @spight2024] as opposed to narrower paths toward college major choice. Secondly, most previous studies of major choice examine group differences during a student’s freshman year [@rose1971; @spight2024], rather than longitudinally. Finally, while locus of control has been extensively studied, there is a dearth of research on how locus of control changes over time [@nowicki2018].
 
-## Participants
+Based on past studies of locus of control and decision-making as well as self-authorship theory [@magolda2023], we hypothesize that across the five major pathways measured in this study (uncertain, discovery, redirect, solidification, and certain), we would observe varied longitudinal patterns of locus of control. As locus of control was measured continuously— with lower scores indicating externality and higher scores indicating internality— hypotheses were based on both orientation at Time 1 (T1) and change from T1 to Time 4 (T4). Specifically, we hypothesize that 1) students in the uncertain pathway will demonstrate stable external locus of control from T1 to T4, 2) students in the discovery pathway will demonstrate a shift from external locus of control to internal locus of control between T1 to T4, 3) students in the redirect pathway will show stable internal locus of control from T1 to T4, 4) students in the solidification pathway will demonstrate increased internality from T1 to T4, and 5) students in the certain pathway will show stable internal locus of control from T1 to T4. 
+
+# Method
+
+## Participants and Procedure
 
 Participants were `r nrow(dat)` undergraduate students enrolled at a large, public university in the United States. They ranged in age from `r min(dat$age_sim)` to `r max(dat$age_sim)` years old (*M* = `r mean(dat$age_sim)`, *SD* = `r sd(dat$age_sim)`). The majority of participants identified as `r Mode(dat$race_sim)` (`r (attr(Mode(dat$race_sim), "freq"))/(length(dat$race_sim)) * 100`%) and `r tolower(Mode(dat$gender_sim))` (`r (attr(Mode(dat$gender_sim), "freq"))/(length(dat$gender_sim)) * 100`%). Additionally, the majority (`r (attr(Mode(dat$us_born_sim), "freq"))/(length(dat$us_born_sim)) * 100`%) of participants were born in the United States. A detailed summary of participant demographics is available in Table 1.
 
@@ -137,7 +141,7 @@ apa_table(dem_table,
           note = table_1_caption)
 ```
 
-Participants were recruited through a multicultural orientation event, with the first wave of data collection occurring during their first semester of college and the final wave occurring during the second semester of their sophomore year. Participants who participated in at least three waves of the survey were included in analyses.
+Participants were recruited through a multicultural orientation event, with the first wave of data collection occurring prior to their first semester of college and the final wave occurring during the second semester of their sophomore year. They completed the first wave of the study as part of student orientation. The following three waves of the study were sent via email, and participants received \$7 per completed follow-up survey. Those who participated in at least three waves of the survey were included in analyses.
 
 ## Materials
 
@@ -149,11 +153,9 @@ College major pathways were coded based on participant self-reported narratives 
 
 Locus of control was measured through the Internal Locus of Control subscale of the 20-item version of the Multi-Measure Agentic Personality Scale (MAPS20) [@côté2016]. Participants responded to five items on a 5-point Likert scale ranging from 1 (Strongly Disagree) to 5 (Strongly Agree), with higher scores indicating higher internal locus of control.
 
-## Procedure
-
 ## Data analysis
 
-We used `r cite_r("r-references.bib")` for all our analyses. 
+We used `r cite_r("r-references.bib")` for all our analyses.
 
 Locus of control scores at each timepoint were calculated by averaging scores across the five items on the Internal Locus of Control subscale. Repeated-measures ANOVAs were conducted for each pathway to examine differences in locus of control orientation between time points. Additionally, Tukey's Honestly Significant Difference (HSD) post-hoc tests were conducted to examine differences between waves.
 
@@ -308,8 +310,8 @@ dat_plot <- ggplot(dat_long, aes(wave, loc, fill = pathway_sim)) +
 
 dat_plot_2 <- ggplot(dat_long, aes(pathway_sim, loc, fill = wave)) +
   geom_boxplot() +
-  ggtitle("Figure 1: Changes in Locus of Control Over Time by Pathway") +
-  xlab("Pathway") +
+  ggtitle("Figure 1: Changes in Locus of Control Over Time by Major Pathway") +
+  xlab("Major Pathway") +
   ylab("Locus of Control") +
   theme_apa() +
   theme(legend.position = "right") +
@@ -320,7 +322,8 @@ dat_plot_2 <- ggplot(dat_long, aes(pathway_sim, loc, fill = wave)) +
 ```
 
 # Results
-Repeated-measures ANOVAs were conducted to test the hypotheses. ANOVAs compared locus of control scores across all four waves of data collection for each pathway. It was found that there were no significant differences between locus of control scores across timepoints for any of the pathways. Uncertain students showed no significant differences in levels of locus of control across waves (*F* = `r uncertain_f`, *p* = `r printp(uncertain_p)`). Similarly, no significant differences were found between any waves for the Discovery (*F* = `r discovery_f`, *p* = `r printp(discovery_p)`) or Redirect (*F* = `r redirect_f`, *p* = `r printp(redirect_p)`) pathways. There were also no significant differences found in locus of control scores for students in the Solidification pathway (*F* = `r solidification_f`, *p* = `r printp(solidification_p)`) or the Certain pathway (*F* = `r certain_f`, *p* = `r printp(certain_p)`). Results are shown in Figure 1. 
+
+Repeated-measures ANOVAs were conducted to test the hypotheses. ANOVAs compared locus of control scores across all four waves of data collection for each pathway. It was found that there were no significant differences between locus of control scores across timepoints for any of the pathways. Uncertain students showed no significant differences in levels of locus of control across waves (*F* = `r uncertain_f`, *p* = `r printp(uncertain_p)`). Similarly, no significant differences were found between any waves for the Discovery (*F* = `r discovery_f`, *p* = `r printp(discovery_p)`) or Redirect (*F* = `r redirect_f`, *p* = `r printp(redirect_p)`) pathways. There were also no significant differences found in locus of control scores for students in the Solidification pathway (*F* = `r solidification_f`, *p* = `r printp(solidification_p)`) or the Certain pathway (*F* = `r certain_f`, *p* = `r printp(certain_p)`). Results are shown in Figure 1.
 
 ```{r boxplot, echo = FALSE}
 knitr::opts_chunk$set(fig.align = 'left')
