@@ -58,7 +58,7 @@ library("summarytools")
 library("ggplot2")
 r_refs("r-references.bib")
 
-dat <- read.csv("/Users/varshaschool/Documents/loc_pathways/Data/loc_pathways_simulated_data_2025-11-08.csv")
+dat <- read.csv("Data/loc_pathways_simulated_data_2025-11-08.csv")
 ```
 
 ```{r analysis-preferences}
