@@ -298,17 +298,7 @@ certain_plot <- ggplot(certain_dat_long, aes(wave, loc, fill = wave)) +
 #I will try to join all 5 dataframes and facet_wrap to make one chart with all 5 boxplots
 dat_long <- rbind(uncertain_dat_long, discovery_dat_long, redirect_dat_long, solidification_dat_long, certain_dat_long)
 
-dat_plot <- ggplot(dat_long, aes(wave, loc, fill = pathway_sim)) +
-  geom_boxplot() +
-  ggtitle("Changes in Locus of Control Over Time by Pathway") +
-  xlab("Wave") +
-  ylab("Locus of Control") +
-  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
-  theme_apa() +
-  theme(legend.position = "none") +
-  facet_wrap(~ pathway_sim, dir = "lb", scales = "fixed")
-
-dat_plot_2 <- ggplot(dat_long, aes(pathway_sim, loc, fill = wave)) +
+dat_plot <- ggplot(dat_long, aes(pathway_sim, loc, fill = wave)) +
   geom_boxplot() +
   ggtitle("Figure 1: Changes in Locus of Control Over Time by Major Pathway") +
   xlab("Major Pathway") +
@@ -327,7 +317,7 @@ Repeated-measures ANOVAs were conducted to test the hypotheses. ANOVAs compared 
 
 ```{r boxplot, echo = FALSE}
 knitr::opts_chunk$set(fig.align = 'left')
-dat_plot_2
+dat_plot
 ```
 
 \newpage
