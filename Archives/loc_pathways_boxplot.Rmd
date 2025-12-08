@@ -1,0 +1,181 @@
+---
+title: "loc_pathways_boxplot"
+output: html_document
+---
+
+```{r setup, include = FALSE}
+library("dplyr")
+library("ggplot2")
+
+dat <- read.csv("../Data/loc_pathways_simulated_data_2025-11-08.csv")
+```
+
+```{r}
+#Making columns with loc scores
+dat$w1_loc_sim <- rowMeans(dat[, c("w1_loc_1_sim", "w1_loc_2_sim", "w1_loc_3_sim", "w1_loc_4_sim", "w1_loc_5_sim")], na.rm = TRUE)
+
+dat$w2_loc_sim <- rowMeans(dat[, c("w2_loc_1_sim", "w2_loc_2_sim", "w2_loc_3_sim", "w2_loc_4_sim", "w2_loc_5_sim")], na.rm = TRUE)
+
+dat$w3_loc_sim <- rowMeans(dat[, c("w3_loc_1_sim", "w3_loc_2_sim", "w3_loc_3_sim", "w3_loc_4_sim", "w3_loc_5_sim")], na.rm = TRUE)
+
+dat$w4_loc_sim <- rowMeans(dat[, c("w4_loc_1_sim", "w4_loc_2_sim", "w4_loc_3_sim", "w4_loc_4_sim", "w4_loc_5_sim")], na.rm = TRUE)
+
+#Making subsets per pathway
+uncertain_dat <- dat %>% 
+  filter(dat$pathway_sim == "Uncertain")
+
+discovery_dat <- dat %>% 
+  filter(dat$pathway_sim == "Discovery")
+
+redirect_dat <- dat %>% 
+  filter(dat$pathway_sim == "Redirect")
+
+solidification_dat <- dat %>% 
+  filter(dat$pathway_sim == "Solidification")
+
+certain_dat <- dat %>% 
+  filter(dat$pathway_sim == "Certain")
+
+#Making subsets per pathway
+uncertain_dat <- dat %>% 
+  filter(dat$pathway_sim == "Uncertain")
+
+discovery_dat <- dat %>% 
+  filter(dat$pathway_sim == "Discovery")
+
+redirect_dat <- dat %>% 
+  filter(dat$pathway_sim == "Redirect")
+
+solidification_dat <- dat %>% 
+  filter(dat$pathway_sim == "Solidification")
+
+certain_dat <- dat %>% 
+  filter(dat$pathway_sim == "Certain")
+
+#Uncertain pathway: pivot, aov, plot
+uncertain_dat_long <- pivot_longer(uncertain_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+uncertain_aov <- aov(loc ~ wave, data = uncertain_dat_long)
+uncertain_sum <- summary(uncertain_aov)
+uncertain_f <- uncertain_sum[[1]][["F value"]][1]
+uncertain_p <- uncertain_sum[[1]][["Pr(>F)"]][1]
+TukeyHSD(uncertain_aov)
+
+uncertain_plot <- ggplot(uncertain_dat_long, aes(wave, loc, fill = wave)) +
+  geom_boxplot() +
+  ggtitle("Uncertain Pathway: Changes in Locus of Control") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none")
+
+#Discovery pathway: pivot, aov, plot
+discovery_dat_long <- pivot_longer(discovery_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+discovery_aov <- aov(loc ~ wave, data = discovery_dat_long)
+discovery_sum <- summary(discovery_aov)
+discovery_f <- discovery_sum[[1]][["F value"]][1]
+discovery_p <- discovery_sum[[1]][["Pr(>F)"]][1]
+TukeyHSD(discovery_aov)
+
+discovery_plot <- ggplot(discovery_dat_long, aes(wave, loc, fill = wave)) +
+  geom_boxplot() +
+  ggtitle("Discovery Pathway: Changes in Locus of Control") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none")
+
+discovery_dat_long <- pivot_longer(discovery_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+#Redirect pathway: pivot, aov, plot
+redirect_dat_long <- pivot_longer(redirect_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+redirect_aov <- aov(loc ~ wave, data = redirect_dat_long)
+redirect_sum <- summary(redirect_aov)
+redirect_f <- redirect_sum[[1]][["F value"]][1]
+redirect_p <- redirect_sum[[1]][["Pr(>F)"]][1]
+TukeyHSD(redirect_aov)
+
+redirect_plot <- ggplot(redirect_dat_long, aes(wave, loc, fill = wave)) +
+  geom_boxplot() +
+  ggtitle("Redirect Pathway: Changes in Locus of Control") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none")
+
+#Solidification pathway: pivot, aov, plot
+solidification_dat_long <- pivot_longer(solidification_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+solidification_aov <- aov(loc ~ wave, data = solidification_dat_long)
+solidification_sum <- summary(solidification_aov)
+solidification_f <- solidification_sum[[1]][["F value"]][1]
+solidification_p <- solidification_sum[[1]][["Pr(>F)"]][1]
+TukeyHSD(solidification_aov)
+
+solidification_plot <- ggplot(solidification_dat_long, aes(wave, loc, fill = wave)) +
+  geom_boxplot() +
+  ggtitle("Solidification Pathway: Changes in Locus of Control") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none")
+
+#Certain pathway: pivot, aov, plot
+certain_dat_long <- pivot_longer(certain_dat,
+                                 31:34,
+                                 names_to = "wave",
+                                 values_to = "loc")
+
+certain_aov <- aov(loc ~ wave, data = certain_dat_long)
+certain_sum <- summary(certain_aov)
+certain_f <- certain_sum[[1]][["F value"]][1]
+certain_p <- certain_sum[[1]][["Pr(>F)"]][1]
+TukeyHSD(certain_aov)
+
+certain_plot <- ggplot(certain_dat_long, aes(wave, loc, fill = wave)) +
+  geom_boxplot() +
+  ggtitle("Certain Pathway: Changes in Locus of Control") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none")
+
+#I will try to join all 5 dataframes and facet_wrap to make one chart with all 5 boxplots
+dat_long <- rbind(uncertain_dat_long, discovery_dat_long, redirect_dat_long, solidification_dat_long, certain_dat_long)
+```
+
+```{r}
+#Boxplot
+dat_plot <- ggplot(dat_long, aes(wave, loc, fill = pathway_sim)) +
+  geom_boxplot() +
+  ggtitle("Changes in Locus of Control Over Time by Pathway") +
+  xlab("Wave") +
+  ylab("Locus of Control") +
+  scale_x_discrete(labels = c("Wave 1", "Wave 2", "Wave 3", "Wave 4")) +
+  theme_apa() +
+  theme(legend.position = "none") +
+  facet_wrap(~pathway_sim, dir = "lb", scales = "fixed")
+dat_plot
+```
