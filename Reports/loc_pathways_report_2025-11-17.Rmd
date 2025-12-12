@@ -58,11 +58,12 @@ library("summarytools")
 library("ggplot2")
 r_refs("r-references.bib")
 
+#Set working directory to loc_pathways/Reports
 dat <- read.csv("../Data/loc_pathways_simulated_data_2025-11-08.csv")
 ```
 
 ```{r analysis-preferences}
-# Seed for random number generation
+#Seed for random number generation
 set.seed(42)
 knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 ```
@@ -114,6 +115,7 @@ us_born_p <- round((us_born_n/nrow(dat) * 100), digits = 2)
 not_us_born_n <- sum(dat$us_born_sim == 0)
 not_us_born_p <- round((not_us_born_n/nrow(dat) * 100), digits = 2)
 
+#Making demographic table
 dem_table <- tribble(
     ~Characteristic, ~n, ~`%`,
     "Gender", gender_n, gender_p,
@@ -185,7 +187,7 @@ solidification_dat <- dat %>%
 certain_dat <- dat %>% 
   filter(dat$pathway_sim == "Certain")
 
-#Uncertain pathway: pivot, aov, plot
+#Uncertain pathway: pivot, anova, plot
 uncertain_dat_long <- pivot_longer(uncertain_dat,
                                  31:34,
                                  names_to = "wave",
@@ -195,6 +197,8 @@ uncertain_aov <- aov(loc ~ wave, data = uncertain_dat_long)
 uncertain_sum <- summary(uncertain_aov)
 uncertain_f <- uncertain_sum[[1]][["F value"]][1]
 uncertain_p <- uncertain_sum[[1]][["Pr(>F)"]][1]
+uncertain_df <- uncertain_sum[[1]][["Df"]][1]
+uncertain_df2 <- uncertain_sum[[1]][["Df"]][2]
 TukeyHSD(uncertain_aov)
 
 uncertain_plot <- ggplot(uncertain_dat_long, aes(wave, loc, fill = wave)) +
@@ -216,6 +220,8 @@ discovery_aov <- aov(loc ~ wave, data = discovery_dat_long)
 discovery_sum <- summary(discovery_aov)
 discovery_f <- discovery_sum[[1]][["F value"]][1]
 discovery_p <- discovery_sum[[1]][["Pr(>F)"]][1]
+discovery_df <- discovery_sum[[1]][["Df"]][1]
+discovery_df2 <- discovery_sum[[1]][["Df"]][2]
 TukeyHSD(discovery_aov)
 
 discovery_plot <- ggplot(discovery_dat_long, aes(wave, loc, fill = wave)) +
@@ -242,6 +248,8 @@ redirect_aov <- aov(loc ~ wave, data = redirect_dat_long)
 redirect_sum <- summary(redirect_aov)
 redirect_f <- redirect_sum[[1]][["F value"]][1]
 redirect_p <- redirect_sum[[1]][["Pr(>F)"]][1]
+redirect_df <- redirect_sum[[1]][["Df"]][1]
+redirect_df2 <- redirect_sum[[1]][["Df"]][2]
 TukeyHSD(redirect_aov)
 
 redirect_plot <- ggplot(redirect_dat_long, aes(wave, loc, fill = wave)) +
@@ -263,6 +271,8 @@ solidification_aov <- aov(loc ~ wave, data = solidification_dat_long)
 solidification_sum <- summary(solidification_aov)
 solidification_f <- solidification_sum[[1]][["F value"]][1]
 solidification_p <- solidification_sum[[1]][["Pr(>F)"]][1]
+solidification_df <- solidification_sum[[1]][["Df"]][1]
+solidification_df2 <- solidification_sum[[1]][["Df"]][2]
 TukeyHSD(solidification_aov)
 
 solidification_plot <- ggplot(solidification_dat_long, aes(wave, loc, fill = wave)) +
@@ -284,6 +294,8 @@ certain_aov <- aov(loc ~ wave, data = certain_dat_long)
 certain_sum <- summary(certain_aov)
 certain_f <- certain_sum[[1]][["F value"]][1]
 certain_p <- certain_sum[[1]][["Pr(>F)"]][1]
+certain_df <- certain_sum[[1]][["Df"]][1]
+certain_df2 <- certain_sum[[1]][["Df"]][2]
 TukeyHSD(certain_aov)
 
 certain_plot <- ggplot(certain_dat_long, aes(wave, loc, fill = wave)) +
@@ -313,7 +325,7 @@ dat_plot <- ggplot(dat_long, aes(pathway_sim, loc, fill = wave)) +
 
 # Results
 
-Repeated-measures ANOVAs were conducted to test the hypotheses. ANOVAs compared locus of control scores across all four waves of data collection for each pathway. It was found that there were no significant differences between locus of control scores across timepoints for any of the pathways. Uncertain students showed no significant differences in levels of locus of control across waves (*F* = `r uncertain_f`, *p* = `r printp(uncertain_p)`). Similarly, no significant differences were found between any waves for the Discovery (*F* = `r discovery_f`, *p* = `r printp(discovery_p)`) or Redirect (*F* = `r redirect_f`, *p* = `r printp(redirect_p)`) pathways. There were also no significant differences found in locus of control scores for students in the Solidification pathway (*F* = `r solidification_f`, *p* = `r printp(solidification_p)`) or the Certain pathway (*F* = `r certain_f`, *p* = `r printp(certain_p)`). Results are shown in Figure 1.
+Repeated-measures ANOVAs were conducted to test the hypotheses. ANOVAs compared locus of control scores across all four waves of data collection for each pathway. It was found that there were no significant differences between locus of control scores across timepoints for any of the pathways. Uncertain students showed no significant differences in levels of locus of control across waves (*F*(`r uncertain_df`, `r uncertain_df2`) = `r uncertain_f`, *p* = `r printp(uncertain_p)`). Similarly, no significant differences were found between any waves for the Discovery (*F*(`r discovery_df`, `r discovery_df2`) = `r discovery_f`, *p* = `r printp(discovery_p)`) or Redirect (*F*(`r redirect_df`, `r redirect_df2`) = `r redirect_f`, *p* = `r printp(redirect_p)`) pathways. There were also no significant differences found in locus of control scores for students in the Solidification pathway (*F*(`r solidification_df`, `r solidification_df2`) = `r solidification_f`, *p* = `r printp(solidification_p)`) or the Certain pathway (*F*(`r certain_df`, `r certain_df2`) = `r certain_f`, *p* = `r printp(certain_p)`). Results are shown in Figure 1.
 
 ```{r boxplot, echo = FALSE}
 knitr::opts_chunk$set(fig.align = 'left')
